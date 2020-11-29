@@ -2,6 +2,7 @@ from nmigen import *
 from nmigen_soc.wishbone import *
 from nmigen_soc.memory import *
 
+# Memory mapping module, inspired by Vivonomicon's "RISC-V Memories" module.
 class MemMap(Elaboratable):
     def __init__(self, rom, ram):
         # Multiplexers
